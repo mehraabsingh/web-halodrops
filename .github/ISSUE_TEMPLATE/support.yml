@@ -1,0 +1,33 @@
+name: HaloDrops support
+description: Get help with HaloDrops or report a problem.
+title: "[Support] "
+body:
+  - type: markdown
+    attributes:
+      value: "Thanks for getting in touch. This is a public issue: please do not include private files, credentials, or unredacted logs."
+  - type: input
+    id: macos
+    attributes:
+      label: macOS version
+      placeholder: "For example: macOS 15.6"
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: HaloDrops version
+      description: Find this in HaloDrops Settings.
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened?
+      description: Include the tool, file type, expected result, and any error message.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: What were you doing when the issue occurred?
